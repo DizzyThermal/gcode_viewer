@@ -1,5 +1,11 @@
 # Viewer for Slic3r/PrusaSlic3r Generated G-Code Files
 
+## Requirements
+
+[Python 3+](https://www.python.org/downloads/)
+
+## Usage
+
 ```shell
 G-Code Settings Viewer
 
@@ -9,7 +15,7 @@ options:
   -v VIEW, --view VIEW  Slic3r Settings to View: [simple|advanced|expert]
 ```
 
-Example Usage:
+## Examples
 
 ```shell
 ./gcode_viewer.py -f test.gcode
