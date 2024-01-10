@@ -62,11 +62,12 @@ def print_config(config):
         print(f"    [A] Fill gaps:                        {config['gap_fill_enabled']}")
         print(f"    [A] Perimeter generator:              {config['perimeter_generator']}")
     print()
-    print('  Fuzzy skin (experimental)')
-    print(f"    Fuzzy Skin:                           {config['fuzzy_skin']}")
-    if config['view'] > VIEW_SIMPLE:
-        print(f"    [A] Fuzzy skin thickness:             {config['fuzzy_skin_thickness']} mm")
-        print(f"    [A] Fuzzy skin point distance:        {config['fuzzy_skin_point_dist']} mm")
+    if 'fuzzy_skin' in config:
+        print('  Fuzzy skin (experimental)')
+        print(f"    Fuzzy Skin:                           {config['fuzzy_skin']}")
+        if config['view'] > VIEW_SIMPLE:
+            print(f"    [A] Fuzzy skin thickness:             {config['fuzzy_skin_thickness']} mm")
+            print(f"    [A] Fuzzy skin point distance:        {config['fuzzy_skin_point_dist']} mm")
     print()
     print('Infill:')
     print()
